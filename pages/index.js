@@ -22,7 +22,7 @@ const Home = () => {
   return (
     <>
       <Header />
-      <Characters characters={characters} />
+      <Characters characters={characters} setCharacters={setCharacters} />
       <Footer />
     </>
   );
