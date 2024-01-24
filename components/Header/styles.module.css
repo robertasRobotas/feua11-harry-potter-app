@@ -1,4 +1,69 @@
 .main {
   background-color: rgb(85, 59, 109);
   height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  width: 100%;
+  position: fixed;
+}
+
+.wrapper {
+  height: 100px;
+}
+
+.title {
+  font-size: 2rem;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.navbar ul li a {
+  color: black;
+}
+
+.burgerButtonWrapper {
+  cursor: pointer;
+  display: none;
+}
+
+.mobileNav {
+  display: none;
+}
+
+@media screen and (width < 768px) {
+  .main nav {
+    display: none;
+  }
+
+  .burgerButtonWrapper {
+    display: inline-block;
+  }
+
+  .mobileNav {
+    display: inline-block;
+    height: calc(100vh - 100px);
+    width: 100%;
+    position: fixed;
+    top: 100px;
+    left: -100%;
+    background-color: rgb(85, 59, 109);
+    transition: 2s;
+  }
+
+  .mobileNavOpened {
+    left: 0;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5rem;
+  }
 }

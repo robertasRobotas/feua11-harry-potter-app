@@ -1,0 +1,37 @@
+.button {
+  all: unset;
+  border: 2px solid black;
+  width: 120px;
+  text-align: center;
+  padding: 0.5rem;
+  color: white;
+  transition: 0.3s;
+}
+
+.button:hover {
+  background-color: rgb(111, 43, 175);
+}
+
+.success {
+  background-color: green;
+}
+
+.success:hover {
+  background-color: rgb(3, 85, 3);
+}
+
+.warning {
+  background-color: rgb(197, 223, 2);
+}
+
+.warning:hover {
+  background-color: rgb(143, 160, 13);
+}
+
+.danger {
+  background-color: brown;
+}
+
+.danger:hover {
+  background-color: rgb(142, 16, 16);
+}

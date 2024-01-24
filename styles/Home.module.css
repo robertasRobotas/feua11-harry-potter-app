@@ -1,0 +1,8 @@
+.homeButton {
+  background-color: rgb(30, 28, 172);
+  font-weight: 900;
+}
+
+.homeButton:hover {
+  background-color: rgb(55, 53, 182);
+}
