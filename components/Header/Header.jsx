@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Link from "next/link";
 import styles from "./styles.module.css";
 import burgerButton from "../../assets/images/burger.svg";
 
@@ -7,13 +8,10 @@ const Navbar = () => {
     <nav className={styles.navbar}>
       <ul>
         <li>
-          <a href="#">About</a>
+          <Link href="/">Characters</Link>
         </li>
         <li>
-          <a href="#">Characters</a>
-        </li>
-        <li>
-          <a href="#">Contacts</a>
+          <Link href="/contacts">Contacts</Link>
         </li>
       </ul>
     </nav>

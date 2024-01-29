@@ -3,13 +3,9 @@ import React from "react";
 import Image from "next/image";
 import noImage from "../../assets/images/noImage.png";
 
-const Card = ({ id, name, species, image, yearOfBirth, filterCharacters }) => {
-  const onClickCard = () => {
-    filterCharacters(id);
-  };
-
+const Card = ({ id, name, species, image, yearOfBirth }) => {
   return (
-    <div onClick={onClickCard} className={styles.main}>
+    <div className={styles.main}>
       <div>{name}</div>
       <div>{yearOfBirth}</div>
       <div>{species}</div>

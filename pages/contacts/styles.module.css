@@ -1,0 +1,22 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 50%;
+  margin: auto;
+  padding-top: 4rem;
+}
+
+.form input {
+  padding: 0.5rem;
+}
+
+.form textarea {
+  padding: 0.5rem;
+  height: 150px;
+  resize: vertical;
+}
+
+.form button {
+  padding: 0.5rem;
+}
